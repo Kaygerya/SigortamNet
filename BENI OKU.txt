@@ -1,0 +1,7 @@
+Uygulamanın veritabanına bağlanabilmesi için IP adresinize izin vermem gereklidir. yoksa çalışmayacaktır.
+Appsettings.json dosyasındaki bağlantıyı ve database adını değiştirerek kendi seçeceğiniz bir mongodb sunucusuna bağlanabilirsiniz.
+Uygulama 11 karakter tc kimlik , boşluk vs içermeyen plaka,  alfanumerik seri, ve sadece numaralı ruhsat numarası ile çalışır. diğer durumlarda hata verir.
+Uygulama TCKimlik ve plakayı unique kabul eder. bu yuzden  aynı tc kimlikten ve plakadan bir request kaydı olabilir.  aynı plaka ve tc kimlik ile eklenen farklı ruhsat seri ve ruhsat numaraları onceki kaydı gunceller.
+Her tc kimlik ve plaka için  3 ayrı firmadan 3 teklif alınır. aynı veriler için  sonraki alınan kayıtlar eskilerinin üzerüne yazar.
+Farklı firma verileri async farklı threadlarla toplanırlar. işlem  3 işlemin toplam süresi kadar değil en uzun süren işlemin süresi kadar  sürer. Bu yuzden de sıralama farklı olabilir.
+Uygulama  çalışırken , MVC uygulamasıyla beraber 3 apinin de  ayağa kalkması gerekir.

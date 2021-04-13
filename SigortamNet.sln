@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SigortamNet.Services", "SigortamNet.Services\SigortamNet.Services.csproj", "{F3863CF9-8F59-4216-8781-D5631EDF2A3D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SigortamNet.DAL", "SigortamNet.DAL\SigortamNet.DAL.csproj", "{4097E3F4-B217-403B-84BE-A0EF55644C23}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SigortamNet.Core", "SigortamNet.Core\SigortamNet.Core.csproj", "{E467B6C9-FD91-4EA1-8D4D-0F3CDA2E7049}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SigortamNet.Web", "SigortamNet.Web\SigortamNet.Web.csproj", "{26AFAC0B-0BAB-4A07-9C81-974DB8069192}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACompany.API", "ACompany.API\ACompany.API.csproj", "{2ED29730-031A-4D59-B3B1-D805920ABA2B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BCompany.API", "BCompany.API\BCompany.API.csproj", "{887CCA67-94AD-47DC-AEF2-1EFEFE753131}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CCompany.API", "CCompany.API\CCompany.API.csproj", "{2849B577-7B09-4F68-A609-D0C7DB8E8367}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3863CF9-8F59-4216-8781-D5631EDF2A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3863CF9-8F59-4216-8781-D5631EDF2A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3863CF9-8F59-4216-8781-D5631EDF2A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3863CF9-8F59-4216-8781-D5631EDF2A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4097E3F4-B217-403B-84BE-A0EF55644C23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4097E3F4-B217-403B-84BE-A0EF55644C23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4097E3F4-B217-403B-84BE-A0EF55644C23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4097E3F4-B217-403B-84BE-A0EF55644C23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E467B6C9-FD91-4EA1-8D4D-0F3CDA2E7049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E467B6C9-FD91-4EA1-8D4D-0F3CDA2E7049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E467B6C9-FD91-4EA1-8D4D-0F3CDA2E7049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E467B6C9-FD91-4EA1-8D4D-0F3CDA2E7049}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26AFAC0B-0BAB-4A07-9C81-974DB8069192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26AFAC0B-0BAB-4A07-9C81-974DB8069192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26AFAC0B-0BAB-4A07-9C81-974DB8069192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26AFAC0B-0BAB-4A07-9C81-974DB8069192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ED29730-031A-4D59-B3B1-D805920ABA2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ED29730-031A-4D59-B3B1-D805920ABA2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ED29730-031A-4D59-B3B1-D805920ABA2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ED29730-031A-4D59-B3B1-D805920ABA2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{887CCA67-94AD-47DC-AEF2-1EFEFE753131}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{887CCA67-94AD-47DC-AEF2-1EFEFE753131}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{887CCA67-94AD-47DC-AEF2-1EFEFE753131}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{887CCA67-94AD-47DC-AEF2-1EFEFE753131}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2849B577-7B09-4F68-A609-D0C7DB8E8367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2849B577-7B09-4F68-A609-D0C7DB8E8367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2849B577-7B09-4F68-A609-D0C7DB8E8367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2849B577-7B09-4F68-A609-D0C7DB8E8367}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FE00164-D347-447A-A4DC-9BC0506EBA8F}
+	EndGlobalSection
+EndGlobal
