@@ -1,0 +1,11 @@
+C:\Users\Monster\source\repos\SigortamNet\SigortamNet.Core\bin\Debug\net5.0\SigortamNet.Core.deps.json
+C:\Users\Monster\source\repos\SigortamNet\SigortamNet.Core\bin\Debug\net5.0\SigortamNet.Core.dll
+C:\Users\Monster\source\repos\SigortamNet\SigortamNet.Core\bin\Debug\net5.0\ref\SigortamNet.Core.dll
+C:\Users\Monster\source\repos\SigortamNet\SigortamNet.Core\bin\Debug\net5.0\SigortamNet.Core.pdb
+C:\Users\Monster\source\repos\SigortamNet\SigortamNet.Core\obj\Debug\net5.0\SigortamNet.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Monster\source\repos\SigortamNet\SigortamNet.Core\obj\Debug\net5.0\SigortamNet.Core.AssemblyInfoInputs.cache
+C:\Users\Monster\source\repos\SigortamNet\SigortamNet.Core\obj\Debug\net5.0\SigortamNet.Core.AssemblyInfo.cs
+C:\Users\Monster\source\repos\SigortamNet\SigortamNet.Core\obj\Debug\net5.0\SigortamNet.Core.csproj.CoreCompileInputs.cache
+C:\Users\Monster\source\repos\SigortamNet\SigortamNet.Core\obj\Debug\net5.0\SigortamNet.Core.dll
+C:\Users\Monster\source\repos\SigortamNet\SigortamNet.Core\obj\Debug\net5.0\ref\SigortamNet.Core.dll
+C:\Users\Monster\source\repos\SigortamNet\SigortamNet.Core\obj\Debug\net5.0\SigortamNet.Core.pdb

@@ -1,0 +1,4 @@
+C:\Users\Monster\source\repos\SigortamNet\SigortamNet.Core\obj\Debug\netcoreapp3.1\SigortamNet.Core.csprojAssemblyReference.cache
+C:\Users\Monster\source\repos\SigortamNet\SigortamNet.Core\obj\Debug\netcoreapp3.1\SigortamNet.Core.AssemblyInfoInputs.cache
+C:\Users\Monster\source\repos\SigortamNet\SigortamNet.Core\obj\Debug\netcoreapp3.1\SigortamNet.Core.AssemblyInfo.cs
+C:\Users\Monster\source\repos\SigortamNet\SigortamNet.Core\obj\Debug\netcoreapp3.1\SigortamNet.Core.csproj.CoreCompileInputs.cache
