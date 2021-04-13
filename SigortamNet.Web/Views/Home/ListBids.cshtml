@@ -1,0 +1,22 @@
+﻿@model SigortamNet.Web.Models.Home.ListBidModel
+@{
+    Layout = "_Layout";
+}
+
+
+
+<div class="container h-100">
+    <div class="row align-items-center h-100">
+        <div class="col-6 mx-auto">
+            <form class="form-horizontal  mt-2" action="@Url.Action("ListBids","Home")" method="post">
+                <div class="row btn-info mt-2"><label class="form-label ml-2"><strong>Arama</strong></label></div>
+                <div class="mb-3">
+                    <label asp-for="IdentityNumber" class="form-label">TC Kimlik No</label>
+                    <input type="text" asp-for="IdentityNumber" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Ara</button>
+            </form>
+        </div>
+        <div class="col-12">@await Html.PartialAsync("~/Views/Home/CompanyBidsTable.cshtml", Model.Bids) </div>
+    </div>
+</div>

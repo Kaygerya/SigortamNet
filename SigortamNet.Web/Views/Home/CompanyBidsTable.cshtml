@@ -1,0 +1,35 @@
+﻿@model List<SigortamNet.Core.Entities.Bids.BidResponse>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">TC Kimlik No</th>
+            <th scope="col">Firma Logosu</th>
+            <th scope="col">Firma Adı</th>
+            <th scope="col">Teklif Açıklaması</th>
+            <th scope="col">Teklif tutarı</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model == null || Model.Count == 0)
+        {
+            <tr>
+                <td colspan="4">Hiç teklif bulunamadı</td>
+            </tr>
+        }
+        else
+        {
+            foreach (var bidResponse in Model)
+            {
+                <tr>
+                    <td>@bidResponse.IdentityNumber</td>
+                    <th><img src="@bidResponse.CompanyLogo" /></th>
+                    <td>@bidResponse.CompanyName</td>
+                    <td>@bidResponse.BidDescription</td>
+                    <td>@bidResponse.BidPrice TL</td>
+                </tr>
+            }
+        }
+
+    </tbody>
+</table>

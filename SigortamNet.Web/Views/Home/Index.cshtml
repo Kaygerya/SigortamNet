@@ -1,0 +1,73 @@
+﻿@model SigortamNet.Core.Entities.Bids.BidRequest
+
+@{
+    Layout = "_Layout";
+}
+
+
+<div class="container h-100">
+    <div class="row align-items-center h-100">
+        <div class="col-6 mx-auto">
+            <form class="form-horizontal  mt-2" action="@Url.Action("Index","Home")" method="post">
+                <div class="row btn-info mt-2"><label class="form-label ml-2"><strong>Sorgulama</strong></label></div>
+
+                @if (!Model.IsSuccess)
+                {
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        @foreach (var error in Model.Errors)
+                        {
+                            <p>@error</p>
+                        }
+
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>}
+
+                <div class="mb-3">
+                    <label asp-for="IdentityNumber" class="form-label">TC Kimlik No</label>
+                    <input type="text" asp-for="IdentityNumber" class="form-control" onfocusout="checkLicenseInfo()">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Plate" class="form-label">Plaka</label>
+                    <input type="text" asp-for="Plate" class="form-control" onfocusout="checkLicenseInfo()" style="text-transform: uppercase">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="LicenseSerial" class="form-label">Ruhsat Seri Kodu</label>
+                    <input type="text" asp-for="LicenseSerial" class="form-control" style="text-transform: uppercase">
+                </div>
+                <div class="mb-3">
+                    <label asp-for="LicenseNumber" class="form-label">Ruhsat Seri No</label>
+                    <input type="text" asp-for="LicenseNumber" class="form-control">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function checkLicenseInfo() {
+        var identityNumber = $("#IdentityNumber").val();
+        var plate = $("#Plate").val();
+        var url = "/Home/GetLicenseInfoBtIdentityNumberAndPlate?identityNumber=" + identityNumber + "&plate=" + plate;
+        if (identityNumber != null && identityNumber.length == @SigortamNet.Core.Constants.BiddingConstants.IdentityNumberCount && plate != null && plate != "") {
+
+            $.ajax({
+                url: url,
+                
+            }).done(function (bidRequestResult) {
+                if (bidRequestResult != null) {
+                   
+                    if (bidRequestResult.licenseSerial != null && bidRequestResult.licenseNumber != null) {
+                        $("#LicenseSerial").val(bidRequestResult.licenseSerial);
+                        $("#LicenseNumber").val(bidRequestResult.licenseNumber);
+                    }
+                }
+            }).fail(function (error) {
+                console.log(error);
+            });
+
+        }
+    }
+</script>
